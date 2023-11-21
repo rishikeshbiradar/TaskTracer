@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel = "icon" href ="To_Do_List_BG.jpg" 
+        type = "image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+@media (max-width:560px) 
+{
+    #mainHeading {
+        width: 315px;
+        text-align: center;
+        font-size: 45px;
+        margin: 12px auto;
+    }
+
+    .taskContainer {
+        width: 415px;
+        min-height: 550px;
+        padding: 10px;
+    }
+
+    #inputTask {
+        width: 335px;
+        height: 40px;
+        padding-left: 8px;
+        margin: 3px;
+        font-size: 18px;
+    }
+    
+    #addTask {
+        width: 55px;
+        height: 40px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 18px;
+    }
+    
+    #showTask {
+        width: 270px;
+        min-height: 25px;
+        padding: 2px;
+        margin: 3px;
+        font-size: 18px;
+    }
+    
+    #deleteTask {
+        width: 55px;
+        height: 30px;
+        margin: 3px;
+        font-size: 15px;
+    }
+    
+    #printDate {
+        width: 60px;
+        height: 30px;
+        padding: 1px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    footer {
+        text-align: center;
+        width: 425px;
+        margin: auto;
+    }
+}
+
+
+@media (max-width:450px) 
+{
+    #mainHeading {
+        width: 350px;
+        text-align: center;
+        font-size: 55px;
+        margin: 15px auto;
+    }
+
+    .taskContainer {
+        width: 315px;
+        min-height: 550px;
+        padding: 5px;
+    }
+
+    #inputTask {
+        width: 240px;
+        height: 40px;
+        padding-left: 5px;
+        margin: 2px;
+        font-size: 20px;
+    }
+    
+    #addTask {
+        width: 55px;
+        height: 48px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 20px;
+    }
+    
+    #showTask {
+        width: 180px;
+        min-height: 40px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 20px;
+    }
+    
+    #deleteTask {
+        width: 50px;
+        height: 45px;
+        margin: 2px;
+        font-size: 13px;
+    }
+    
+    #printDate {
+        width: 50px;
+        height: 30px;
+        padding: 2px;
+        margin: 5px 0px;
+        font-size: 10px;
+    }
+    footer {
+        text-align: center;
+        width: 325px;
+        margin: auto;
+    }
+}
+
+@media (max-width:330px) 
+{
+    #mainHeading {
+        width: 250px;
+        text-align: center;
+        font-size: 45px;
+        margin: 5px auto;
+    }
+
+    .taskContainer {
+        width: 215px;
+        min-height: 550px;
+        padding: 5px;
+    }
+
+    #inputTask {
+        width: 155px;
+        height: 30px;
+        padding-left: 5px;
+        margin: 2px;
+        font-size: 15px;
+    }
+    
+    #addTask {
+        width: 40px;
+        height: 30px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 15px;
+    }
+    
+    #showTask {
+        width: 115px;
+        min-height: 20px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 15px;
+    }
+    
+    #deleteTask {
+        width: 40px;
+        height: 28px;
+        margin: 1px;
+        font-size: 10px;
+    }
+    
+    #printDate {
+        width: 35px;
+        height: 20px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 8px;
+    }
+    footer {
+        text-align: center;
+        width: 225px;
+        margin: auto;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1 id="mainHeading">To Do List</h1>
+
+    <!-- Task -->
+    <div class="taskContainer">
+        <div id="input">
+            <!-- <input type="text" name="" id="inputTask" placeholder="Enter Your Task"> -->
+            <textarea name=""id="inputTask" placeholder="Enter Your Task" cols="30" rows="10"></textarea>
+            <button id="addTask">Add</button>
+        </div>
+        <div id="taskKeeper">
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Copyright Ⓒ Rushikesh Biradar 2023 | All Rights Reserved</h3>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
